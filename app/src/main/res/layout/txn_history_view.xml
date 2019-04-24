@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="0dp"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="3dp"
+    android:elevation="6dp"
+    android:id="@+id/txn_history_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paid to Merchant name"
+            android:id="@+id/txn_history_header_txt"
+            android:textColor="#2C2E2C"
+            android:textSize="16sp"
+            android:fontFamily="Roboto"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txn_history_time"
+            android:layout_below="@id/txn_history_header_txt"
+            android:text="10, Jan 2018"
+            android:textColor="#B7BDBA"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txn_history_date"
+            android:layout_below="@id/txn_history_time"
+            android:text="8:00 PM."
+            android:textColor="#B7BDBA"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txn_history_amount"
+            android:text="-₹85.00"
+            android:layout_alignParentRight="true"
+            android:textColor="#2C2E2C"
+            android:textSize="16sp"
+            />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

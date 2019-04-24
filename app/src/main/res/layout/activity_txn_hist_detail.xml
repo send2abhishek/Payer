@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"
+
+        android:id="@+id/activity_home_toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#5C6961"
+        android:orientation="vertical"
+        android:id="@+id/activity_main_first_layout"
+        android:layout_height="100dp">
+
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="-70dp"
+        app:cardElevation="8dp"
+        android:background="#FFFFFF"
+        android:layout_height="400dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_txn_det_mer_amount_paid_title"
+                android:text="Amount Paid: "
+                android:textColor="#2C2E2C"
+                android:textSize="14sp"
+                android:layout_marginRight="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_txn_det_amount_symbol"
+                android:layout_alignBaseline="@id/activity_txn_det_mer_amount_paid_title"
+                android:text="₹"
+                android:layout_toRightOf="@id/activity_txn_det_mer_amount_paid_title"
+                android:textSize="18sp"
+                android:layout_marginRight="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_txn_det_amount"
+                android:layout_toRightOf="@id/activity_txn_det_amount_symbol"
+                android:layout_toEndOf="@id/activity_txn_det_amount_symbol"
+                android:text="85.00"
+                android:textColor="#2C2E2C"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@id/activity_txn_det_mer_amount_paid_title"
+                />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_success"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:id="@+id/activity_txn_det_date"
+                android:text="10 Jan, 2018"
+                android:layout_below="@id/activity_txn_det_mer_amount_paid_title"
+                android:textColor="#4C5A52"
+                android:textSize="14sp"
+                android:fontFamily="Roboto"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:id="@+id/activity_txn_det_time"
+                android:layout_below="@id/activity_txn_det_date"
+                android:textColor="#4C5A52"
+                android:textSize="14sp"
+                android:fontFamily="Roboto"
+                android:text="11:18 a.m"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_txn_det_amount_paid"
+                android:text="Paid to: "
+                android:layout_centerVertical="true"
+                android:textColor="#A0AAA0"
+                android:textSize="16sp"
+                android:fontFamily="Roboto"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_txn_det_mer_name"
+                android:layout_below="@id/activity_txn_det_amount_paid"
+                android:layout_marginTop="4dp"
+                android:text="Sugar Cane Outlet"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#2C2E2C"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_txn_det_mer_mobile"
+                android:layout_below="@id/activity_txn_det_mer_name"
+                android:text="+91 9887766554"
+                android:textColor="#A0AAA0"
+                android:textSize="14sp"
+                android:fontFamily="Roboto"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_txn_det_mer_txn_id"
+                    android:text="Transaction Id:"
+                    android:textColor="#A0AAA0"
+                    android:textSize="14sp"
+                    android:layout_marginRight="4dp"
+                    android:fontFamily="Roboto"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_txn_det_txn_id_det"
+                    android:layout_toRightOf="@id/activity_txn_det_mer_txn_id"
+                    android:text="786545896709"
+                    android:textColor="#4C5A52"
+                    android:textSize="14sp"
+                    android:layout_marginRight="4dp"
+                    android:fontFamily="Roboto"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_txn_det_txn_type"
+                    android:layout_below="@id/activity_txn_det_mer_txn_id"
+                    android:text="Transaction Type:"
+                    android:textColor="#A0AAA0"
+                    android:textSize="14sp"
+                    android:layout_marginRight="4dp"
+                    android:fontFamily="Roboto"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_txn_det_txn_type_det"
+                    android:layout_below="@id/activity_txn_det_txn_id_det"
+                    android:text="Sale"
+                    android:textColor="#4C5A52"
+                    android:textSize="14sp"
+                    android:layout_marginRight="4dp"
+                    android:fontFamily="Roboto"
+                    android:layout_toRightOf="@id/activity_txn_det_txn_type"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

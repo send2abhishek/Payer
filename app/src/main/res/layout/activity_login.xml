@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#444"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="LOGIN"
+            android:textColor="#FFF"
+            android:fontFamily="Roboto"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            >
+
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/ic_username"
+                android:id="@+id/activity_login_username_icon"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:fontFamily="Roboto"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFF"
+                android:id="@+id/activity_login_username_header"
+                android:layout_toRightOf="@id/activity_login_username_icon"
+                android:layout_toEndOf="@id/activity_login_username_icon"
+                android:layout_alignBaseline="@id/activity_login_username_icon"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="10"
+                android:id="@+id/activity_login_username_field"
+                android:layout_below="@id/activity_login_username_icon"
+                android:layout_alignStart="@id/activity_login_username_header"
+                android:layout_alignLeft="@id/activity_login_username_header"
+                android:hint="+91 10 digit mobile number"
+                android:textColorHint="#B7BDBA"
+                />
+
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/ic_lock"
+                android:id="@+id/activity_login_password_icon"
+                android:layout_marginTop="18dp"
+                android:layout_below="@id/activity_login_username_field"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:fontFamily="Roboto"
+                android:textSize="14sp"
+                android:layout_marginTop="22dp"
+                android:textColor="#FFF"
+                android:id="@+id/activity_login_password_header"
+                android:layout_alignStart="@id/activity_login_username_field"
+                android:layout_alignLeft="@id/activity_login_username_field"
+                android:layout_alignBaseline="@id/activity_login_password_icon"
+                android:layout_below="@id/activity_login_username_field"
+                />
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLength="8"
+                android:id="@+id/activity_login_password_field"
+                android:layout_below="@id/activity_login_password_header"
+                android:layout_alignStart="@id/activity_login_password_header"
+                android:layout_alignLeft="@id/activity_login_password_header"
+                android:hint="* * * * * *"
+                android:textColorHint="#B7BDBA"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:fontFamily="Roboto"
+                android:textSize="14sp"
+                android:textColor="#FFF"
+                android:id="@+id/activity_login_forget_password"
+                android:layout_below="@id/activity_login_password_field"
+                android:textAlignment="viewEnd"
+                android:gravity="end"
+                android:textStyle="italic"
+                />
+
+
+            <Button
+                android:layout_width="196dp"
+                android:layout_height="53dp"
+                android:text="Login"
+                android:id="@+id/activity_login_btn"
+                android:background="#EE3524"
+                android:layout_below="@id/activity_login_forget_password"
+                android:layout_marginTop="34dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#F9EFF3"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

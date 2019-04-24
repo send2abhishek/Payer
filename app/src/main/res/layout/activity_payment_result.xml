@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"
+
+        android:id="@+id/activity_home_toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#5C6961"
+        android:orientation="vertical"
+        android:id="@+id/activity_main_first_layout"
+        android:layout_height="100dp">
+
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="-70dp"
+        app:cardElevation="8dp"
+        android:background="#FFFFFF"
+        android:layout_height="400dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_payment_result_mer_name"
+                android:text="Sugar Cane Outlet "
+                android:textColor="#2C2E2C"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 9887766554"
+                android:layout_below="@id/activity_payment_result_mer_name"
+                android:textColor="#A0AAA0"
+                android:textSize="14sp"
+                android:id="@+id/activity_payment_result_mer_mob_nbr"
+                />
+
+
+
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_merchant"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:id="@+id/activity_txn_det_date"
+                android:text="10 Jan, 2018"
+                android:layout_below="@id/activity_payment_result_mer_mob_nbr"
+                android:textColor="#4C5A52"
+                android:textSize="14sp"
+                android:fontFamily="Roboto"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:id="@+id/activity_txn_det_time"
+                android:layout_below="@id/activity_txn_det_date"
+                android:textColor="#4C5A52"
+                android:textSize="14sp"
+                android:fontFamily="Roboto"
+                android:text="11:18 a.m"
+                />
+
+            <ImageView
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:src="@mipmap/ic_success"
+                android:layout_centerInParent="true"
+                android:id="@+id/activity_payment_result_success_img"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Successful"
+                android:layout_below="@id/activity_payment_result_success_img"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#2C2E2C"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_payment_result_det_amount_paid_txt"
+                    android:text="Amount Paid: :"
+                    android:textColor="#A0AAA0"
+                    android:textSize="14sp"
+                    android:layout_marginRight="4dp"
+                    android:fontFamily="Roboto"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_payment_result_amount"
+                    android:layout_toRightOf="@+id/activity_payment_result_det_amount_paid_txt"
+                    android:text="₹ 85.00"
+                    android:textColor="#4C5A52"
+                    android:textSize="14sp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_payment_result_det_mer_txn_id"
+                    android:layout_below="@id/activity_payment_result_det_amount_paid_txt"
+                    android:text="Transaction Id:"
+                    android:textColor="#A0AAA0"
+                    android:textSize="14sp"
+                    android:layout_marginRight="4dp"
+                    android:fontFamily="Roboto"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_payment_result_txn_id_det"
+                    android:layout_below="@id/activity_payment_result_amount"
+                    android:layout_toRightOf="@id/activity_payment_result_det_mer_txn_id"
+                    android:text="786545896709"
+                    android:textColor="#4C5A52"
+                    android:textSize="14sp"
+                    android:layout_marginRight="4dp"
+                    android:fontFamily="Roboto"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_payment_result_txn_type"
+                    android:layout_below="@id/activity_payment_result_det_mer_txn_id"
+                    android:text="Transaction Type:"
+                    android:textColor="#A0AAA0"
+                    android:textSize="14sp"
+                    android:layout_marginRight="4dp"
+                    android:fontFamily="Roboto"
+                    android:layout_marginTop="8dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_payment_result_txn_type_det"
+                    android:layout_below="@id/activity_payment_result_txn_id_det"
+                    android:text="Sale"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#4C5A52"
+                    android:textSize="14sp"
+                    android:layout_marginRight="4dp"
+                    android:fontFamily="Roboto"
+                    android:layout_toRightOf="@id/activity_payment_result_txn_type"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="210dp"
+            android:layout_height="53dp"
+            android:background="#EE3524"
+            android:layout_centerInParent="true"
+            android:text="Go To Home"
+            android:textColor="#F9EFF3"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:id="@+id/activity_payment_result_home_btn"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

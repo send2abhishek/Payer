@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191B1C"
+    android:padding="18dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@mipmap/ic_account"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Roboto"
+            android:textAlignment="center"
+            android:text="Account Details"
+            android:textSize="16sp"
+            android:textColor="#4285F4"
+            android:id="@+id/drawer_account_det" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@mipmap/ic_help"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Roboto"
+            android:textAlignment="center"
+            android:text="Help"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/drawer_help" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@mipmap/ic_terms"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Roboto"
+            android:textAlignment="center"
+            android:text="Terms and conditions"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/drawer_terms" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@mipmap/ic_offers"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Roboto"
+            android:textAlignment="center"
+            android:text="Offers"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/drawer_offers" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@mipmap/ic_logout"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Roboto"
+            android:textAlignment="center"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/drawer_logout" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

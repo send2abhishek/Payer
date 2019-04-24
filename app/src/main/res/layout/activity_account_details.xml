@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"
+
+        android:id="@+id/activity_home_toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#5C6961"
+        android:orientation="vertical"
+        android:id="@+id/activity_main_first_layout"
+        android:layout_height="100dp">
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="-44dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/activity_account_profile_pic"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/img"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/ic_profile_pic"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kasyapa Sharma K"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/activity_account_profile_name"
+            android:layout_toRightOf="@id/activity_account_profile_pic"
+            android:layout_marginTop="-6dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9686966995"
+            android:textSize="14sp"
+            android:textColor="#EDEDED"
+            android:id="@+id/activity_account_profile_number"
+            android:layout_alignLeft="@id/activity_account_profile_name"
+            android:layout_below="@id/activity_account_profile_name"
+            />
+    </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:gravity="end"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="18dp"
+       android:layout_height="wrap_content">
+
+       <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Current Balance: "
+       android:textColor="#EE3524"
+       android:textSize="16sp"
+       />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="1345"
+           android:textColor="#4C5A52"
+           android:textSize="16sp"
+           android:textStyle="bold"
+           android:id="@+id/activity_account_bal"
+           />
+
+
+
+   </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="24dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:layout_height="80dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Limits: "
+            android:textSize="16sp"
+            android:textColor="#2C2E2C"
+            android:id="@+id/activity_account_limit"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2000 per month "
+            android:textSize="16sp"
+            android:textColor="#4C5A52"
+            android:layout_toRightOf="@id/activity_account_limit"
+            android:id="@+id/activity_account_txn_limit_amount"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Limits: "
+            android:textSize="16sp"
+            android:textColor="#2C2E2C"
+            android:layout_marginTop="6dp"
+            android:id="@+id/activity_account_txn_limit"
+            android:layout_below="@id/activity_account_limit"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100 per day "
+            android:textSize="16sp"
+            android:textColor="#4C5A52"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/activity_account_txn_limit"
+            android:id="@+id/activity_account_limit_amount"
+            android:layout_below="@id/activity_account_txn_limit_amount"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last 3 transactions"
+            android:textColor="#2C2E2C"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/activity_account_recylerview"
+                android:scrollbars="vertical"
+                android:clickable="true"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
