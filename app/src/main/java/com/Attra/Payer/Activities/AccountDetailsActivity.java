@@ -16,7 +16,6 @@ import com.google.gson.Gson;
 import com.squareup.otto.Subscribe;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.IOException;
 
 import static com.Attra.Payer.Activities.HomePageActivity.profileMobile;
